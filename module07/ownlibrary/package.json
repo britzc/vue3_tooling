@@ -1,0 +1,21 @@
+{
+  "name": "ownlibrary",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ownlibrary.umd.cjs",
+  "module": "./dist/ownlibrary.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ownlibrary.ws.js",
+      "require": "./dist/ownlibrary.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
+}
